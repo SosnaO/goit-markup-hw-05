@@ -24,6 +24,10 @@ header {
   background-color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .flex-container {
   padding-top: 94px;
   padding-bottom: 94px;
