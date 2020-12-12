@@ -50,7 +50,7 @@ ul {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   text-decoration: none;
-
+  border: none;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -67,6 +67,39 @@ ul {
   margin-right: auto;
 }
 
+.backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-white-color);
+  min-width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+      padding-right: 8px;
+    padding-top: 8px;
+}
 /*  section*/
 .section-title {
   color: var(--title-text-color);
@@ -152,18 +185,18 @@ ul {
 }
 
 .flex-element > .subtitle {
-position: absolute;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--primary-white-color);
-bottom: 0;
-width: 100%;
-padding: 27px 0px;
-margin: 0px;
-background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0px;
+  margin: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*  team*/
