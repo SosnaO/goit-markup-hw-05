@@ -63,6 +63,7 @@ span {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo:hover,
 .logo:focus {
@@ -99,6 +100,7 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -138,7 +140,9 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .aut-nav .link:hover,
 .aut-nav .link:focus {
   color: var(--accent-color);
@@ -190,6 +194,7 @@ span {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   padding-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress .link:hover,
@@ -236,21 +241,23 @@ span {
   padding-bottom: 20px;
 }
 
-.web-link {
+/*.web-link {
   display: flex;
   justify-content: center;
   align-items: center;
 
   border-radius: 50%;
   color: var(--icon-color);
+
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .web-link:hover,
 .web-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-
+*/
 .websocial-list {
   display: flex;
   padding: 0px;
