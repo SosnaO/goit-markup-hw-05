@@ -190,6 +190,7 @@ ul {
 
 .flex-element > .subtitle {
   position: absolute;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
